@@ -1,11 +1,12 @@
 ---
 page_type: sample
 languages:
-- csharp
+- java
 products:
-- dotnet
-description: "Add 150 character max description"
-urlFragment: "update-this-to-unique-url-stub"
+- Azure
+- Azure App configuration
+description: "This project demonstrates how to connect and use app config from a spring aop application"
+urlFragment: "https://github.com/Azure-Samples/azure-springaop-appconfig.git"
 ---
 
 # Official Microsoft Sample
@@ -39,11 +40,15 @@ Outline the required components and tools that a user might need to have on thei
 
 ## Setup
 
-Explain how to prepare the sample once the user clones or downloads the repository. The section should outline every step necessary to install dependencies and set up any settings (for example, API keys and output folders).
+Code based on documentation at https://github.com/Azure/azure-sdk-for-java/tree/master/appconfiguration/client  
+
+git clone https://github.com/Azure-Samples/azure-springaop-appconfig.git 
+cd azure-springaop-appconfig  
 
 ## Runnning the sample
 
-Outline step-by-step instructions to execute the sample and see its output. Include steps for executing the sample from the IDE, starting specific services in the Azure portal or anything related to the overall launch of the code.
+Run TestAOP  
+Prints the result of key defined in Azure App Config  
 
 ## Key concepts
 
