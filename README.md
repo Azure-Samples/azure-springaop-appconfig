@@ -54,7 +54,8 @@ git clone https://github.com/Azure-Samples/azure-springaop-appconfig.git
 cd azure-springaop-appconfig   
 
 Step 3:   
-To create a new App Configuration store, sign in to the Azure portal. In the upper-left corner of the pane, select +Create a resource  
+To create a new App Configuration store, sign in to the [Azure Portal](https://ms.portal.azure.com "Azure Portal")
+. In the upper-left corner of the pane, select +Create a resource  
 Select App Configuration from the search results, and then select Create.    
 On the App Configuration > Create pane -> Enter Resource Name, Resource Group, Subscription, Location    
 Once the App Config is created - Goto Access Keys and note ConnectionString - this will be needed later  
