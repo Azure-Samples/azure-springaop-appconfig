@@ -38,21 +38,47 @@ Outline the file contents of the repository. It helps users navigate the codebas
 
 Outline the required components and tools that a user might need to have on their machine in order to run the sample. This can be anything from frameworks, SDKs, OS versions or IDE releases.
 
-## Setup
 
-Code based on documentation at https://github.com/Azure/azure-sdk-for-java/tree/master/appconfiguration/client  
+## How to run this sample
 
-git clone https://github.com/Azure-Samples/azure-springaop-appconfig.git 
-cd azure-springaop-appconfig  
+Working installation of Java and Maven
+An Internet connection
 
-## Runnning the sample
+Step 1: Download Java (8 and above) for your platform
+To successfully use this sample, you need a working installation of Java and Maven.
 
-Run TestAOP  
-Prints the result of key defined in Azure App Config  
+Step 2: Clone or download this repository  
+From your shell or command line:  
+
+git clone https://github.com/Azure-Samples/azure-springaop-appconfig.git     
+cd azure-springaop-appconfig   
+
+Step 3:   
+To create a new App Configuration store, sign in to the Azure portal. In the upper-left corner of the pane, select +Create a resource  
+Select App Configuration from the search results, and then select Create.    
+On the App Configuration > Create pane -> Enter Resource Name, Resource Group, Subscription, Location    
+Once the App Config is created - Goto Access Keys and note ConnectionString - this will be needed later  
+Select Create. The deployment might take a few minutes to finish.  
+After the deployment is finished, select Settings > Access Keys.  
+Make a note of either the primary read-only or primary read-write key connection string.    
+You'll use this connection string later to configure your application to communicate with the App Configuration store that you created.    
+
+Step 4: 
+Goto TestAOP file   
+Update the connectionString that was noted earlier  
+mvn clean package  
+Run TestAOP    
+This prints the value of the key set as in this case "keyString"   
 
 ## Key concepts
 
-Provide users with more context on the tools and services used in the sample. Explain some of the code that is being used and how services interact with each other.
+https://docs.microsoft.com/en-us/azure/azure-app-configuration/overview
+
+What is Azure App Config?  
+Azure App Configuration provides a service to centrally manage application settings and feature flags. Modern programs, especially programs running in a cloud, generally have many components that are distributed in nature  
+
+App Configuration complements Azure Key Vault, which is used to store application secrets.
+
 
 ## Contributing
 
